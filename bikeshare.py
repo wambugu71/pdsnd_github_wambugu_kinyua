@@ -13,7 +13,7 @@ def  time_func(func):
     start = time.time()
     res = func(*args, **kwargs)
     end = time.time()
-    print("This Took {} seconds...".format(end- start))
+    print("The  function {} Took {} seconds...".format(func.__name__,end- start))
     return res
   return time_func_
 
@@ -34,7 +34,7 @@ def get_filters():
         city = str(input("Enter  the name  of  the  city  of  intrest (chicago, new_york, washington).")).lower()
         month  = str(input("Enter  the  month of  intrest (all, january, february,march,april, may, june)")).lower()
         day = str(input("Enter  the  week day  of  intrest all, monday, tuesday, ... sunday).")).lower()
-        proceed = input("Do you  wish to proceed to th next  step?(yes, no)")
+        proceed = str(input("Do you  wish to proceed to th next  step?(yes, no)"))
         if  proceed.lower() == "yes":
           break
     except KeyError as e:
@@ -215,6 +215,7 @@ def peek_on(df):
             end_data += 5
         else:
             break
+@time_func
 def main():
     while True:
         city, month, day = get_filters()
@@ -226,7 +227,7 @@ def main():
         user_stats(df)
         peek_on(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = str(input('\nWould you like to restart? Enter yes or no.\n'))
         if restart.lower() != 'yes':
             print("Thank you  for exploring the  dataset, have a  great time.")
             break
