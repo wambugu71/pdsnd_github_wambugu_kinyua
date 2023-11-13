@@ -7,6 +7,8 @@ __ Udacity Programming  for  Data science  ND __
 ### Description
 -  The  aim of  this  project  is  to  analyse  the  US bike  share  datasets. 
 - we are to explore  the  dataset  so as  to gain insights  from the datasets.
+- The  student  had  to write  the  code  to import  the  datasets  and  answer  some  intresting  questions  from the datasets, 
+which was  in an interactive session by  the  user  keying  in the  raw  inputs.
 ### Files used
 files  used  in the  project are:
 > 1.  `bikeshre.py`
