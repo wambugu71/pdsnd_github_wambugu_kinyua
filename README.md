@@ -13,6 +13,8 @@ files  used  in the  project are:
 > 2. `washington.csv`
 > 3. `new_y0rk_city.csv`
 > 4. `chicago.csv`
+- They are  from the  respective  cities  as  the  files are  named.
+- The  datasets  have  the same  headers / columns  but different  values  from each  city.
 
 ### Credits
 - Project  files  provided  by Udacity. Completed  by  `wambugu kinyua `
