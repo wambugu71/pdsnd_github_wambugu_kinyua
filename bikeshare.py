@@ -8,6 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def  time_func(func):
+''' Defining  our  custom  python  decorator  for  timing  our  functions '''
   def time_func_(*args, **kwargs):
     start = time.time()
     res = func(*args, **kwargs)
