@@ -17,7 +17,17 @@ files  used  in the  project are:
 > 4. `chicago.csv`
 - They are  from the  respective  cities  as  the  files are  named.
 - The  datasets  have  the same  headers / columns  but different  values  from each  city.
-
+### Requirements 
+- python  libraries  used :
+> 1. `numpy  `
+> 2. `pandas `
+* installation:
+``` Bash 
+pip install numpy  
+```
+``` Bash 
+pip install pandas  
+```
 ### Credits
 - Project  files  provided  by Udacity. Completed  by  `wambugu kinyua `
 
