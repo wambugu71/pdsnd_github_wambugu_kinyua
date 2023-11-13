@@ -11,7 +11,7 @@ def  time_func(func):
     start = time.time()
     res = func(*args, **kwargs)
     end = time.time()
-    print("This Took {} seconds...".format(end- start))
+    print("The  function {} Took {} seconds...".format(func.__name__,end- start))
     return res
   return time_func_
 
